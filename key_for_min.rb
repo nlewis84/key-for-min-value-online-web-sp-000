@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   min_value = 0
   name_hash.collect do |key, index|
     while i < name_hash.length
-      if name_hash[i] > name_hash[i+1]
+      if name_hash[i] < name_hash[i+1]
         min_value = name_hash[i+1]
       else
         min_value = name_hash[i]
