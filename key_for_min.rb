@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
     if index - min_value < 0
       min_value = index
     end
-   index
+   min_value
    binding.pry
   end
 end
