@@ -9,6 +9,6 @@ def key_for_min_value(name_hash)
       min_value = index
     end
    min_value
-   binding.pry
   end
+  binding.pry
 end
