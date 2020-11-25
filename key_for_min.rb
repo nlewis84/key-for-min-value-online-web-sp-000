@@ -3,8 +3,5 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  min_value = name_hash.values.first
-  name_hash.collect do |key, index|
-    
-  end
+  binding.pry
 end
