@@ -6,6 +6,7 @@ def key_for_min_value(name_hash)
   i = name_hash.length
   min_value = 0
   name_hash.collect do |key, index, i|
+        binding.pry
     while i < name_hash.length
       if name_hash[i] < name_hash[i+1]
         min_value = name_hash[i+1]
