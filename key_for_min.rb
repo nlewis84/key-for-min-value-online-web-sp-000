@@ -8,10 +8,12 @@ def key_for_min_value(name_hash)
   name_hash.collect do |key, index|
     binding.pry
     while i > 0
-      if name_hash[i] < name_hash[i+1]
-        min_value = name_hash[i+1]
-      else
+      if name_hash[i] < name_hash[i-1]
         min_value = name_hash[i]
+        binding.pry
+      else
+        min_value = name_hash[i-1]
+        binding.pry
       end
     i -= 1
     end
