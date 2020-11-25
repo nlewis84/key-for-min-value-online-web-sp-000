@@ -5,7 +5,7 @@ require 'pry'
 def key_for_min_value(name_hash)
   i = name_hash.length
   min_value = 0
-  name_hash.collect do |key, index|
+  name_hash.collect do |key, index, i|
     while i < name_hash.length
       if name_hash[i] < name_hash[i+1]
         min_value = name_hash[i+1]
@@ -13,9 +13,6 @@ def key_for_min_value(name_hash)
         min_value = name_hash[i]
       end
     i += 1
-    binding.pry
     end
   end
-  
-  binding.pry
 end
